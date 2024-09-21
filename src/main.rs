@@ -1,7 +1,7 @@
 use std::io::Write;
 
 fn main() {
-    let listener = std::net::TcpListener::bind("127.0.0.1:8080").unwrap();
+    let listener = std::net::TcpListener::bind("0.0.0.0:25565").unwrap();
 
     for stream in listener.incoming() {
         let mut stream = stream.unwrap();
