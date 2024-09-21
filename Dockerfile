@@ -3,4 +3,4 @@ WORKDIR /app
 COPY . .
 RUN cargo install --path .
 EXPOSE 25565
-CMD testik
+CMD ["testik"]
